@@ -5,3 +5,14 @@ body {
 #tools {
     margin: 0 0 8px 0;
 }
+
+.material-icons {
+    display: inline-flex;
+    vertical-align: middle;
+}
+
+#status {
+    font-size: 10pt;
+    color: transparent;
+    text-shadow: 0 0 2px rgba(170, 170, 170, 0.8);
+}

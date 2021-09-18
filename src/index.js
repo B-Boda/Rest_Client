@@ -3,9 +3,16 @@ const path = require('path');
 const url = require('url');
 const request = require("request-promise-native");
 
-require('electron-reload')(__dirname, {
-    electron: path.join(__dirname, "..", "node_modules", ".bin", "electron.cmd")
-});
+if (process.platform === "win32") {
+    require('electron-reload')(__dirname, {
+        electron: path.join(__dirname, "..", "node_modules", ".bin", "electron.cmd")
+    });
+} else if (process.platform === "linux") {
+    require('electron-reload')(__dirname, {
+        electron: path.join(__dirname, "..", "node_modules", ".bin", "electron")
+    });
+}
+
 
 let mainWindow;
 
