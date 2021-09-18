@@ -12,12 +12,13 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/B-Boda/Electron_Test/issues"
   },
   "homepage": "https://github.com/B-Boda/Electron_Test#readme",
   "dependencies": {
+    "electron": "^14.0.1",
     "electron-reload": "^2.0.0-alpha.1",
     "request-promise-native": "^1.0.9"
   }

@@ -3,7 +3,9 @@ const path = require('path');
 const url = require('url');
 const request = require("request-promise-native");
 
-require('electron-reload');
+require('electron-reload')(__dirname, {
+    electron: path.join(__dirname, "..", "node_modules", ".bin", "electron.cmd")
+});
 
 let mainWindow;
 
@@ -23,7 +25,7 @@ function createWindow() {
     }));
 
     // 開発ツールを有効化
-    // mainWindow.webContents.openDevTools();
+    mainWindow.webContents.openDevTools({ mode: "detach" });
 
     Menu.setApplicationMenu(null);
 
