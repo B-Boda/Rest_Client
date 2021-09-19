@@ -11,8 +11,8 @@ body {
     vertical-align: middle;
 }
 
-#status {
-    font-size: 10pt;
+#status .material-icons {
+    font-size: 12pt !important;
     color: transparent;
     text-shadow: 0 0 2px rgba(170, 170, 170, 0.8);
 }
