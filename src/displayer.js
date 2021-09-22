@@ -1,4 +1,8 @@
-var instance = M.Tabs.init(document.querySelector("#material_tabs"));
+$(document).ready(function () {
+    $('ul.tabs').tabs();
+});
+
+
 const getButton = document.querySelector("#get");
 const output = document.querySelector("#output");
 
