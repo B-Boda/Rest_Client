@@ -1,10 +1,9 @@
-$(document).ready(function () {
-    $('ul.tabs').tabs();
-});
-
-
 const getButton = document.querySelector("#get");
 const output = document.querySelector("#output");
+const tabs = document.querySelector("#tabs")
+
+var instance = M.Tabs.init(tabs, {swipeable : true,
+    responsiveThreshold : 1920});
 
 function statusChange(color) {
     document.querySelector("#status .material-icons").style.textShadow = "0 0 2px " + color;
