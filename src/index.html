@@ -12,6 +12,22 @@
 
 <body>
     <h1>Hello, World!</h1>
+    <div class="row" id="material_tabs">
+        <div class="col s12">
+            <ul class="tabs">
+                <li class="tab col s3"><a href="#tab1">タブ1</a></li>
+                <li class="tab col s3"><a class="active" href="#tab2">タブ2</a></li>
+                <li class="tab col s3 disabled"><a href="#tab3">タブ3</a></li>
+                <li class="tab col s3"><a href="#tab4">タブ4</a></li>
+            </ul>
+        </div>
+        <div id="tab1" class="col s12">タブ1の中身</div>
+        <div id="tab2" class="col s12">タブ2の中身</div>
+        <div id="tab3" class="col s12">タブ3の中身</div>
+        <div id="tab4" class="col s12">タブ4の中身</div>
+    </div>
+
+
     <div class="input-field">
         <input id="url" type="text" class="validate">
         <label for="url">URL</label>
@@ -23,8 +39,9 @@
 
     <div id="output"></div>
 
-    <script src="displayer.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="displayer.js"></script>
 </body>
 
 </html>

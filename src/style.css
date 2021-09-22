@@ -8,7 +8,7 @@ body {
 
 .material-icons {
     display: inline-flex;
-    vertical-align: middle;
+    vertical-align: -3px;
 }
 
 #status .material-icons {
