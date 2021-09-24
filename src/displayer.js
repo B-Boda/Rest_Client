@@ -2,8 +2,10 @@ const getButton = document.querySelector("#get");
 const output = document.querySelector("#output");
 const tabs = document.querySelector("#tabs")
 
-var instance = M.Tabs.init(tabs, {swipeable : true,
-    responsiveThreshold : 1920});
+var instance = M.Tabs.init(tabs, {
+    swipeable: true,
+    responsiveThreshold: 1920
+});
 
 function statusChange(color) {
     document.querySelector("#status .material-icons").style.textShadow = "0 0 2px " + color;
@@ -16,6 +18,7 @@ getButton.addEventListener('click', async () => {
         output.innerText = res;
         statusChange("rgba(0, 170, 0, 0.8)");
     }).catch(e => {
-        output.innerText = e;
+        output.innerText = e.message;
+        statusChange("rgba(170, 0, 0, 0.8)");
     })
 });
